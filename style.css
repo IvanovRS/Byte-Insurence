@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    list-style: none;
+    color: white;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.background{
+    background-image: url('./img/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    padding: 30px;
+}
+
+.conteiner{
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.header, .header__ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header{
+    margin-bottom: 134px;
+}
+
+.header__li{
+    margin-right: 21px;
+}
+
+.header__li:not(:last-of-type){
+    margin-right: 21px;  
+}
+
+.title{
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+.text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    min-width: 367px;
+    margin-bottom: 42px;
+}
+
+.input{
+    width: 277px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding-left: 28px;
+    box-sizing: border-box;
+}
+.input::placeholder{
+    color: white;
+}
+
+.button{
+    width: 186px;
+    height: 60px;
+    background: #23A6F0;
+    border-radius: 30px;
+    border: none;
+    margin-left: 22px;
+}
+
+.industry{
+    background: #252B42;
+    padding: 112px 0;
+}
+
+.industry__text{
+    text-align: center;
+    max-width: 607px;
+    mask-repeat: 0 auto;
+    margin-bottom: 96px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.industry__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    margin-bottom: 10px;
+}
+
+.industry__text_2{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 68px;
+    padding-right: 68px;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery__text{
+    min-width: 237px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.gallery__buttom{
+    width: 165px;
+    height: 42px;
+    border-radius: 21px;
+    border: none;
+    background: #23A6F0;
+}
+
+.gallery__item{
+    position: relative;
+}
+.gallery__item:hover > .gallery__item__abs{
+    /* display: block; */
+    opacity: 1;
+    transition: 1s;
+
+}
+
+.gallery__item__abs{
+    position: absolute;
+    bottom: 37px;
+    left: 20px;
+    /* display: none; */
+    opacity: 0;
+}
